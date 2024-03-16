@@ -10,6 +10,6 @@
     justify-content: $center;
 }
 .parrafos{
-    @include estiloTexto(Arial,27px ,azure );
+    @include estiloTexto(Arial,23px ,azure );
     @include flex(flex, 70px, center , center );
 }

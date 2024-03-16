@@ -1,3 +1,7 @@
+.nav-item {
+  margin-right: 60px;
+}
+
 .menu-container {
   display: flex;
   background-color: #d0102d;
@@ -10,9 +14,6 @@
 }
 .menu-container img {
   width: 7.5rem;
-}
-.menu-container .nav-item {
-  margin-right: 60px;
 }
 .menu-container .carrito:hover {
   color: white;
@@ -99,7 +100,7 @@ body {
 
 .parrafos {
   font-family: Arial;
-  font-size: 27px;
+  font-size: 23px;
   color: azure;
   display: flex;
   margin-top: 70px;
