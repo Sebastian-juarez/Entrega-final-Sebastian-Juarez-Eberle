@@ -11,5 +11,5 @@
 }
 .parrafos{
     @include estiloTexto(Arial,27px ,azure );
-    @include flex(flex, 50px, center , center );
+    @include flex(flex, 70px, center , center );
 }

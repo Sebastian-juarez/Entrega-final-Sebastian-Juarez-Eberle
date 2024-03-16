@@ -7,12 +7,17 @@ $margin-rigth: 3%;
 }
 .imagen-guitarras-colgadas{
     @include flex(flex, 8.5%);
+    box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
 }
-
 .imagen-guitarras-ofertas{
     @include flex(flex, 6.5%);
     width: 100%;
     height: $heigth;
+    box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
 }
 
 .imagen-carrito{
