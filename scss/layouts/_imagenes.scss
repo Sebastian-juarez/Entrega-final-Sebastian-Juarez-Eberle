@@ -1,18 +1,22 @@
-.imagen-guitarras-colgadas{
-    display: flex;
-    padding-top:8.5% ;
+$heigth: 750px;
+$margin-rigth: 3%; 
 
+@mixin flex($flex, $padding-top){
+    display: $flex;
+    padding-top: $padding-top;
 }
+.imagen-guitarras-colgadas{
+    @include flex(flex, 8.5%);
+}
+
 .imagen-guitarras-ofertas{
-    display: flex;
-    padding-top:6.5% ;
+    @include flex(flex, 6.5%);
     width: 100%;
-    height: 750px;
-    
+    height: $heigth;
 }
 
 .imagen-carrito{
     width: 7rem;
-    margin-right: 3%;
+    margin-right: $margin-rigth;
 
 }

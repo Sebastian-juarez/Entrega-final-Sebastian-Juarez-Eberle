@@ -1,5 +1,7 @@
+@mixin flex($flex, $margin-top){
+    display: $flex;
+    margin-top: $margin-top;
+}
 .carrousel-de-imagenes{
-    display: flex;
-    margin-top: 10%;
-
+    @include flex(flex, 9%);
 }

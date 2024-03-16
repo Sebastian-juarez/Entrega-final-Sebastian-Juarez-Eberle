@@ -1,5 +1,7 @@
-.card{
-    margin: auto;
-    margin-top: 8%;
+$margin: auto;
+$margin-top: 8%;
 
+.card {
+    margin: $margin;
+    margin-top: $margin-top;
 }

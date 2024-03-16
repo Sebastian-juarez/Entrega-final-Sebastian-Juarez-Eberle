@@ -1,9 +1,15 @@
+@mixin estiloTexto($family, $size, $color){
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
+@mixin flex($flex, $margin-top, $align, $center){
+    display: $flex;
+    margin-top: $margin-top;
+    align-items:$align ;
+    justify-content: $center;
+}
 .parrafos{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 30px;
-    margin-top: 50px;
-    color: azure;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include estiloTexto(Arial,27px ,azure );
+    @include flex(flex, 50px, center , center );
 }

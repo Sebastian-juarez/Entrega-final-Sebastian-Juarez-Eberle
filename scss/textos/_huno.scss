@@ -1,19 +1,20 @@
+@mixin estilosTexto($family, $size, $color){
+    font-family: $family;
+    font-size: $size;
+    color: $color;
+}
+@mixin flex($flex,$margin, $centro, $alinear){
+    display: $flex;
+    margin-top: $margin;
+    justify-content: $centro;
+    align-items: $alinear;
+}
 .h1-inicio{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    margin-top: 5%;
-    color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include estilosTexto(Arial,60px ,azure );
+    @include flex(flex,5% ,center , center);
+}
+h1{
+    @include estilosTexto(Arial,60px ,azure );
+    @include flex(flex,10% ,center , center);
 }
 
-h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    margin-top: 10%;
-    color: azure;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
