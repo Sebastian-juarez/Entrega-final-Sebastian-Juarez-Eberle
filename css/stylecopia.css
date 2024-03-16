@@ -1,0 +1,236 @@
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin-top: 9%;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.parrafos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 50px;
+    color: azure;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body{
+    background-color: rgb(31, 28, 28);
+}
+.nav-item{
+    margin-right: 60px;
+}
+
+.menu-container{
+
+    display: flex;
+    background-color: #d0102d;
+    position: fixed;
+    border-bottom: 2px;
+    border: 2px solid black;
+    width: 100%;
+    top:0;
+    z-index: 1000; 
+
+}
+
+
+header ul{
+
+    list-style-type: none;
+    display: flex;
+    margin: 0px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+    margin-left: 50%;
+}
+header ul li a{
+
+    margin: 20px
+
+    
+}
+
+header img{
+    width: 7.5rem
+}
+
+
+.logoIg{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-left: 130px;
+
+}
+
+
+.wpIcon{
+    display: flex;
+    width: 80px;
+    height: 50px;
+    padding-left: 40%;
+
+}
+
+.carrito:hover{
+    color: white;
+}
+.inicio:hover{
+    color: white;
+}
+.ofertas:hover{
+    color: white;
+}
+.ver-productos:hover{
+    color: white;
+}
+.menu:hover{
+    color: white;
+}
+.card{
+    margin: auto;
+    margin-top: 8%;
+
+}
+.carrousel-de-imagenes{
+    display: flex;
+    margin-top: 11%;
+
+}
+.imagen-guitarras-colgadas{
+    display: flex;
+    padding-top:6.5% ;
+
+}
+.imagen-guitarras-ofertas{
+    display: flex;
+    padding-top:6.5% ;
+    width: 100%;
+    height: 750px;
+    
+}
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    margin-top: 7%;
+    color: azure;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+.correo{
+    margin-top: 4%;
+    align-items: center;
+}
+  
+.contraseña{
+      margin-top: 2%;
+    align-items: center;
+}
+.imagen-carrito{
+      width: 7rem;
+      margin-right: 3%;
+  
+}
+.btn-outline-danger{
+    margin-left: 45.3%;
+    margin-top: 1%;
+
+}
+
+
+@media only screen and (max-width : 500px){
+    
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        margin-top: 48%;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .h1-inicio{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 50px;
+        margin-top: 0%;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        margin-top: 10%;
+        color: azure;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-container{
+
+        display: flex;
+        background-color: #d0102d;
+        position: fixed;
+        border-bottom: 2px;
+        border: 2px solid black;
+        width: 100%;
+        top:0;
+        z-index: 1000; 
+
+    }
+
+
+    header ul{
+
+        list-style-type: none;
+        display: flex;
+        margin: 0px;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        align-items: center;
+        margin-left: 5%;
+    }
+
+    header ul li a{
+
+        margin: 10px
+
+    }
+    .carrousel-de-imagenes{
+        display: none !important;
+
+    }
+    .imagen-guitarras-colgadas{
+        display: flex;
+        padding-top:6.5% ;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    .imagen-guitarras-ofertas{
+        display: flex;
+        padding-top:6.5% ;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        flex: 0 0 50%;
+        margin-top: 8%;
+
+    }
+    .btn{
+    margin-left: 20%;
+    } 
+}
