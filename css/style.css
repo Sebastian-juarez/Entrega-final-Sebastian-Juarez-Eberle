@@ -53,7 +53,7 @@ img {
   font-size: 60px;
   color: azure;
   display: flex;
-  margin-top: 5%;
+  top: 10%;
   justify-content: center;
   align-items: center;
   transition: all 1s ease-in;
@@ -70,7 +70,7 @@ img {
   font-size: 60px;
   color: azure;
   display: flex;
-  margin-top: 10%;
+  top: 208px;
   justify-content: center;
   align-items: center;
   transition: all 1s ease-in;

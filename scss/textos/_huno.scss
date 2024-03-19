@@ -6,13 +6,13 @@ $color :  #d0102d;
 }
 @mixin flex($flex,$margin, $centro, $alinear){
     display: $flex;
-    margin-top: $margin;
+    top: $margin;
     justify-content: $centro;
     align-items: $alinear;
 }
 .h1-inicio{
     @include estilosTexto(Arial,60px ,azure );
-    @include flex(flex,5% ,center , center);
+    @include flex(flex,10% ,center , center);
      transition: all 1s ease-in;
         &:hover{
                 transform:translateX(28px);
@@ -21,16 +21,16 @@ $color :  #d0102d;
                 -moz-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
                 color: $color;
 }
-h1{
-    @include estilosTexto(Arial,60px ,azure );
-    @include flex(flex,10% ,center , center);
-    transition: all 1s ease-in;
-        &:hover{
-                transform:translateX(28px);
-                box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
-                -webkit-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
-                color: $color;
+ h1{
+         @include estilosTexto(Arial,60px ,azure );
+         @include flex(flex,208px ,center , center);
+            transition: all 1s ease-in;
+                &:hover{
+                    transform:translateX(28px);
+                    box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+                    -webkit-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+                    -moz-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+                    color: $color;
         }
     }
 }
