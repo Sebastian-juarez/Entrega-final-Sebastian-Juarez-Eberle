@@ -1,50 +1,46 @@
-.nav-item {
-  margin-right: 60px;
+header {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  flex-wrap: wrap;
+  background-color: #d0102d;
+  border: 2px solid black;
+  border-bottom: 2px;
 }
 
-.menu-container {
-  display: flex;
-  background-color: #d0102d;
-  position: fixed;
-  border-bottom: 2px;
-  border: 2px solid black;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
-.menu-container img {
+img {
   width: 7.5rem;
 }
-.menu-container .carrito:hover {
-  color: white;
-}
-.menu-container .inicio:hover {
-  color: white;
-}
-.menu-container .ofertas:hover {
-  color: white;
-}
-.menu-container .ver-productos:hover {
-  color: white;
-}
-.menu-container .menu:hover {
-  color: white;
-}
-.menu-container .card {
-  margin: auto;
-  margin-top: 8%;
-}
-.menu-container ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0px;
+
+.nav-item {
+  font-family: Arial;
   font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  align-items: center;
-  margin-left: 50%;
+  color: black;
+  margin-left: 195px;
+  margin-right: 0%;
+  flex-wrap: wrap;
 }
-.menu-container ul li a {
-  margin: 20px;
+
+.carrito:hover {
+  color: white;
+}
+
+.inicio:hover {
+  color: white;
+}
+
+.ofertas:hover {
+  color: white;
+}
+
+.ver-productos:hover {
+  color: white;
+}
+
+.menu:hover {
+  color: white;
 }
 
 .carrousel-de-imagenes {
@@ -63,13 +59,13 @@
   transition: all 1s ease-in;
 }
 .h1-inicio:hover {
-  transform: translateX(50px);
+  transform: translateX(28px);
   box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #d0102d;
 }
-
-h1 {
+.h1-inicio h1 {
   font-family: Arial;
   font-size: 60px;
   color: azure;
@@ -79,11 +75,12 @@ h1 {
   align-items: center;
   transition: all 1s ease-in;
 }
-h1:hover {
-  transform: translateX(50px);
+.h1-inicio h1:hover {
+  transform: translateX(28px);
   box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #d0102d;
 }
 
 body {
@@ -107,6 +104,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.parrafos:hover {
+  color: #d0102d;
+}
 
 .imagen-guitarras-colgadas {
   display: flex;
@@ -114,6 +114,7 @@ body {
   box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
 }
 
 .imagen-guitarras-ofertas {
@@ -129,6 +130,10 @@ body {
 .imagen-carrito {
   width: 7rem;
   margin-right: 3%;
+  transition: 1s;
+}
+.imagen-carrito:hover {
+  transform: rotate(360deg);
 }
 
 h2 {
@@ -168,6 +173,12 @@ h2:hover {
   margin-left: 0;
 }
 
+@media only screen and (max-width: 1328px) {
+  .nav-item {
+    margin-right: 0%;
+    margin-left: 95px;
+  }
+}
 @media only screen and (max-width: 500px) {
   h1 {
     font-family: Arial;
@@ -196,27 +207,16 @@ h2:hover {
     justify-content: center;
     align-items: center;
   }
-  .menu-container {
+  header {
     display: flex;
-    background-color: #d0102d;
     position: fixed;
-    border-bottom: 2px;
-    border: 2px solid black;
-    width: 100%;
     top: 0;
+    width: 100%;
     z-index: 1000;
+    flex-wrap: wrap;
   }
-  header ul {
-    list-style-type: none;
-    display: flex;
-    margin: 0px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    align-items: center;
-    margin-left: 5%;
-  }
-  header ul li a {
-    margin: 10px;
+  .nav-item {
+    margin-left: 0%;
   }
   .carrousel-de-imagenes {
     display: none;

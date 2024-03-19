@@ -1,6 +1,13 @@
+$margin-top: 8%;
+$margin-left: 20%;
+@media only screen and (max-width : 1328px){
+    .nav-item{
+        margin-right: 0%;
+        margin-left: 95px;
+       }
+    }
 @media only screen and (max-width : 500px){
-    $margin-top: 8%;
-    $margin-left: 20%;
+
     
     @mixin estiloTexto($family, $size, $color){
         font-family: $family;
@@ -13,6 +20,14 @@
         justify-content: $centro;
         align-items: $alinear;
     }
+    @mixin flexHeader($flex, $fixed, $top, $width, $z-index,$wrap){
+        display: $flex;
+        position: $fixed;
+        top: $top;
+        width:$width ;
+        z-index: 1000 ;
+        flex-wrap: $wrap;
+ }
     @mixin imagenes($flex,$padding-top,$wrap,$width,$heigth){
         display: $flex;
         padding-top: $padding-top;
@@ -38,38 +53,16 @@
         @include estiloTexto(Arial,20px ,azure);
         @include flex(flex, 10%,center , center);
     }
-
-
-    .menu-container{
-
-        display: flex;
-        background-color: #d0102d;
-        position: fixed;
-        border-bottom: 2px;
-        border: 2px solid black;
-        width: 100%;
-        top:0;
-        z-index: 1000; 
-
+    header{
+        @include flexHeader(flex,fixed , 0, 100%, 1000,wrap);
     }
+   
+    
 
-
-    header ul{
-
-        list-style-type: none;
-        display: flex;
-        margin: 0px;
-        font-size: 20px;
-        font-family: Arial, Helvetica, sans-serif;
-        align-items: center;
-        margin-left: 5%;
-    }
-
-    header ul li a{
-
-        margin: 10px
-
-    }
+   .nav-item{
+    margin-left: 0%;
+   }
+  
     .carrousel-de-imagenes{
         display: none;
 
