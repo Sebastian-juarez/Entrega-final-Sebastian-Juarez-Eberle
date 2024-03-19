@@ -1,3 +1,4 @@
+$color :  #d0102d;
 @mixin estilosTexto($family, $size, $color){
     font-family: $family;
     font-size: $size;
@@ -19,6 +20,7 @@ h2{
         box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
         -webkit-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
         -moz-box-shadow: 9px 25px 5px 0px rgba(0,0,0,0.75);
+        color: $color;
     }
 }
 

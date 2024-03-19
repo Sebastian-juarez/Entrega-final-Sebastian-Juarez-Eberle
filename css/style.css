@@ -53,7 +53,7 @@ img {
   font-size: 60px;
   color: azure;
   display: flex;
-  top: 10%;
+  margin-top: 10%;
   justify-content: center;
   align-items: center;
   transition: all 1s ease-in;
@@ -65,17 +65,18 @@ img {
   -moz-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   color: #d0102d;
 }
-.h1-inicio h1 {
+
+h1 {
   font-family: Arial;
   font-size: 60px;
   color: azure;
   display: flex;
-  top: 208px;
+  margin-top: 208px;
   justify-content: center;
   align-items: center;
   transition: all 1s ease-in;
 }
-.h1-inicio h1:hover {
+h1:hover {
   transform: translateX(28px);
   box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
@@ -151,6 +152,7 @@ h2:hover {
   box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 9px 25px 5px 0px rgba(0, 0, 0, 0.75);
+  color: #d0102d;
 }
 
 .btn-outline-danger {
