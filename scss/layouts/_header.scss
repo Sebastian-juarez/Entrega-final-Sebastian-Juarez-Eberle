@@ -1,6 +1,6 @@
  $background-color :  #d0102d;
- $border : 2px solid black;
- $border-bottom : 3px;
+ $border : 2px solid rgb(3, 3, 3);
+ $border-bottom : 2px;
  $margin-left : 195px;
  
  @mixin estiloTexto($family, $size, $color){
@@ -27,7 +27,7 @@
         width: 7.5rem;
     }
          .nav-item {
-            @include estiloTexto(Arial, 20px, black);
+            @include estiloTexto(Arial, 20px, rgb(14, 13, 13));
              margin-left: $margin-left;
              margin-right: 0%;
              flex-wrap: wrap;
@@ -38,7 +38,7 @@
         color: white;
     }
     .inicio:hover{
-        color: white;
+        color: rgb(252, 249, 249);
     }
     .ofertas:hover{
         color: white;
