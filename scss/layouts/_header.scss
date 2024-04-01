@@ -27,7 +27,7 @@
         width: 7.5rem;
     }
          .nav-item {
-            @include estiloTexto(Arial, 20px, rgb(14, 13, 13));
+            @include estiloTexto(Arial, 20px, rgb(7, 7, 7));
              margin-left: $margin-left;
              margin-right: 0%;
              flex-wrap: wrap;
@@ -35,7 +35,7 @@
     
 
     .carrito:hover{
-        color: white;
+        color: rgb(255, 255, 255);
     }
     .inicio:hover{
         color: rgb(252, 249, 249);
